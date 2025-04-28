@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetShop Amor Animal</title>
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png" type="image/x-icon" />
+
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1558788353-f76d92427f16');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    header, section, footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .item img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+
+    #blocoPets {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #blocoPets img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    #blocoPets img:hover {
+      transform: scale(1.1);
+    }
+
+    input, textarea, button {
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header style="text-align: center;">
+  <h1>🐾 PetShop Amor Animal 🐾</h1>
+  <h3>Cuidando do seu pet com carinho!</h3>
+  <nav>
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#produtos-servicos">Produtos & Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" style="text-align: center;">
+  <h2>Bem-vindo ao PetShop Amor Animal</h2>
+  <p>Cuidamos com carinho do seu melhor amigo.</p>
+</section>
+
+<h2 style="text-align: center;">Nossos Animais</h2>
+
+<section id="blocoPets">
+    <img src="imagens/pitbull.png" alt="Pit Bull">
+    <img src="imagens/pastorale.png" alt="Pastor Alemão">
+    <img src="imagens/gato.png" alt="Gato">
+    <img src="imagens/peixebeta.png" alt="Peixe Beta">
+    <img src="imagens/coelho.png" alt="Coelho">
+    <img src="imagens/calopsita.png" alt="Calopsita">
+    <img src="imagens/Hamsters-pequenos1.png" alt="Hamster">
+</section>
+
+<section id="produtos-servicos">
+  <h2 style="text-align: center;">Produtos & Serviços</h2>
+  <form id="form-compras">
+
+    <!-- Produtos -->
+    <div class="item">
+      <input type="checkbox" value="250" class="compra-item">
+      <img src="imagens/ração.png" alt="Ração">
+      Ração Premium - R$ 250,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="40" class="compra-item">
+      <img src="imagens/bola pet.png" alt="Bola">
+      Brinquedo Bola - R$ 40,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="35" class="compra-item">
+      <img src="imagens/osso.png" alt="Osso">
+      Osso de Roer - R$ 35,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="50" class="compra-item">
+      <img src="imagens/coleira.png" alt="Coleira">
+      Coleira Estilosa - R$ 50,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="90" class="compra-item">
+      <img src="imagens/roupa pet.png" alt="Roupa Pet">
+      Roupa Pet Fashion - R$ 90,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="120" class="compra-item">
+      <img src="imagens/arranhador.png" alt="Arranhador">
+      Arranhador para Gato - R$ 120,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="150" class="compra-item">
+      <img src="imagens/aquario.png" alt="Aquário">
+      Aquário Pequeno - R$ 150,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="200" class="compra-item">
+      <img src="imagens/gaiola.png" alt="Gaiola">
+      Gaiola para Aves - R$ 200,00
+    </div>
+
+    <!-- Serviços -->
+    <h3 style="text-align: center;">Serviços</h3>
+    <div class="item">
+      <input type="checkbox" value="50" class="compra-item">
+      <img src="imagens/banhoetosa.png" alt="Banho">
+      Banho e Tosa - R$ 50,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="80" class="compra-item">
+      <img src="imagens/consulta.png" alt="Consulta">
+      Consulta Veterinária - R$ 80,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="70" class="compra-item">
+      <img src="imagens/vacinação.png" alt="Vacinação">
+      Vacinação - R$ 70,00
+    </div>
+
+    <div class="item">
+      <input type="checkbox" value="100" class="compra-item">
+      <img src="imagens/hotel.jpg" alt="Hotelzinho">
+      Hotelzinho Pet - R$ 100,00
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+      <button type="button" onclick="calcularTotalCompra()">Totalizar Compra</button>
+      <h3>Total da Compra: R$ <span id="total-compra">0.00</span></h3>
+    </div>
+  </form>
+</section>
+
+<section id="contato">
+  <h2 style="text-align: center;">Fale Conosco</h2>
+  <form id="form-contato" style="text-align: center;">
+    <input type="text" placeholder="Seu nome" required /><br>
+    <input type="email" placeholder="Seu e-mail" required /><br>
+    <input type="text" placeholder="Número" required /><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer style="text-align: center;">
+  <p>&copy; 2025 PetShop Amor Animal. Desenvolvido por João B Neto. Todos os direitos reservados.</p>
+  <P>contato 021-974813545</P>
+  <p>Endereço: Rua dos Animais, 123 - Bairro Pet - Cidade Animal</p>
+  <p>Telefone: (00) 1234-5678</p>
+  <p>Email: PetShopAmorAnimal@gmail.com</p>
+  <p>Redes sociais: <a href="https://www.instagram.com/petshop_amor_animal" target="_blank">Instagram</a> 
+    | <a href="https://www.facebook.com/petshop_amor_animal" target="_blank">Facebook</a></p>
+</footer>
+
+<script>
+  function calcularTotalCompra() {
+    const itens = document.querySelectorAll('.compra-item');
+    let total = 0;
+    itens.forEach(item => {
+      if (item.checked) {
+        total += parseFloat(item.value);
+      }
+    });
+    document.getElementById('total-compra').textContent = total.toFixed(2);
+  }
+
+  document.getElementById('form-contato').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Mensagem enviada com sucesso!');
+  });
+</script>
+
+</body>
+</html>
